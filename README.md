@@ -1,62 +1,62 @@
-#FARMA
-
+# Farma
 Ferramenta de Autoria para a Remediação de erros com Mobilidade na Aprendizagem.
 
-##Pré-requisitos
+## Pré-requisitos
 
 ```
 nodejs
 libpq-dev
 postgresql
 postgresql-contrib
-
 ```
+## Instalação
 
-##Instalação
-
-1. Clone o repositório do projeto utilizando o comando
-
-    * `git clone https://dmarczal@bitbucket.org/farma-reborned/farma.git`
-
-2. Instalar as gems necessárias
-
-    * Executar  `gem install bundler`
-    * Executar  `bundle install`
-
-3. Configure as váriaveis de ambiente
-
+ Clone o repositório do projeto utilizando o comando
+    
+    -   `git clone https://github.com/dmarczal/FARMA.git`
+ Instalar as gems necessárias
+    
+    -   Executar  `gem install bundler`
+    -   Executar  `bundle install`
+ Configure as váriaveis de ambiente    
 ```
     export GMAIL_USERNAME=username
     export GMAIL_PASSWORD=senha
 
     export FARMA_DATABASE_USERNAME=username
     export FARMA_DATABASE_PASSWORD=senha
+
 ```
+ Instalar Yarn 
+	- Atualizar NodeJs
+		- Executar `sudo npm cache clean -f`
+	    - Executar `sudo npm install -g n`
+	    - Executar `sudo n stable`
+	 - Yarn
+		 - Executar `yarn install`  
 
-4. Crie banco e as tabelas do banco de dados
+ Crie banco e as tabelas do banco de dados
+    
+    -   Executar  `rails db:create`
+    -   Executar  `rails db:migrate`
+ Criar as páginas Sobre e Contato
+    
+    -   Executar o comando  `rails db:seed`
+ Levante o servidor e acesse a aplicação
+    
+    -   Execute  `rails s`
+    -   Acesse a  [FARMA](http://localhost:3000/)
 
-    * Executar `bundle exec rake db:create`
-    * Executar `bundle exec rake db:migrate`
+## Documentação
 
-5. Criar as páginas Sobre e Contato
+## Suporte
 
-    * Executar o comando `bundle exec rake db:seed`
+## Contribua
 
-6. Levante o servidor e acesse a aplicação
+Para contribuir com o projeto use o sistema de Pull Request
 
-    * Execute `thin start`
-    * Acesse a [FARMA](http://localhost:3000)
+## Contribuidores
 
-##Documentação
+## Copyright
 
-##Suporte
-
-##Contribua
-
-  Para contribuir com o projeto use o sistema de Pull Request
-
-##Contribuidores
-
-##Copyright
-
-  FARMA está cobre a [licença do MIT](http://opensource.org/licenses/MIT).
+FARMA está cobre a  [licença do MIT](http://opensource.org/licenses/MIT).
